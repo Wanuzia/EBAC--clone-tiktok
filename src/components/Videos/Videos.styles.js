@@ -67,3 +67,14 @@ export const RecordFooter = styled.img`
     }
   }
 `;
+
+export const SideBar = styled.div`
+position: absolute;
+top: 50%;
+right: ${pxToRem(10)};
+color: white;
+`
+export const SideBarOptions = styled.div`
+padding: ${pxToRem(5)};
+text-align: center;
+`

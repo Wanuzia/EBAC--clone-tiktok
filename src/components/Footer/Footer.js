@@ -2,16 +2,16 @@ import * as S from "../Videos/Videos.styles";
 import locale from "../../utils/locale.json";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 
-const VideoFooter = () => {
+const VideoFooter = ({ name, description, music }) => {
   return (
-    <S.Footer className="video-footer">
+    <S.Footer>
       <div>
-        <h3>@wbcrafts</h3>
-        <p>Descrição do vídeo</p>
+        <h3>@{name}</h3>
+        <p>{description}</p>
         <S.VideoFooterMusicBox>
-          <MusicNoteIcon className="videoFooter__icon"/>
+          <MusicNoteIcon />
           <S.MusicFooterTitle>
-            <p>Título da música</p>
+            <p>{music}</p>
           </S.MusicFooterTitle>
         </S.VideoFooterMusicBox>
       </div>
