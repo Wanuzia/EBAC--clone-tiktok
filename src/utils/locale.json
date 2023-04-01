@@ -1,0 +1,17 @@
+{
+    "videos": [
+        {
+            "video1": "",
+            "link": "https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/brecker2.mp4"
+        },
+        {
+            "bird": "",
+            "link": "https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/bird.mp4"
+        }
+    ],
+    
+        "vinil":{
+            "alt": "imagem de um vinil girando",
+            "link": "https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/vinil.png"
+        }
+}

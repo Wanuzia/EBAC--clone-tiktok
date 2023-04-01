@@ -6,11 +6,23 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
 .app {
-  background-color: aqua;
+  background-color: black;
   height: 100vh;
   display: grid;
   place-items: center;
+}
+
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  padding-bottom: 20px;
 }
 
 /* Cross-browser */
