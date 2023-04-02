@@ -12,11 +12,13 @@ const [video, setVideo] = useState([])
     const videosList = videosSnapshot.docs.map(doc => doc.data());
     setVideo(videosList)
   }
+  let maxHeight = window.innerHeight <= 800 ?  window.innerHeight : " "
+
   useEffect(() => {
     getVideos()
   }, [])
     return (
-        <div className="app">
+        <div className="app" style={{ maxHeight: `${maxHeight}px` }}>
         <S.VideosContainer>
           {video.map((item) => {
             return (

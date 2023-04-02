@@ -1,16 +1,21 @@
 import { pxToRem } from "../../utils/utils";
 import styled from "styled-components";
+import media from "../../utils/media";
 
 export const VideosContainer = styled.div`
   height: 100vh;
   max-height: ${pxToRem(800)};
-  width: 80%;
+  width: 100%;
   max-width: ${pxToRem(500)};
   border: 1px solid black;
   border-radius: ${pxToRem(20)};
   overflow: scroll;
   scroll-snap-type: y mandatory;
   position: relative;
+
+  @media only screen and (min-width: ${media.phone}){
+    width: 80%;
+  }
 `;
 export const VideoBox = styled.div`
   height: 100%;
@@ -28,14 +33,17 @@ export const Video = styled.video`
 export const Footer = styled.div`
   color: white;
   position: relative;
-  bottom: 20%;
+  bottom: 22%;
   left: ${pxToRem(30)};
+  @media only screen and (min-width: ${media.phone}){
+    bottom: 20%;
+  }
 `;
 export const VideoFooterMusicBox = styled.div`
   display: flex;
 `;
 export const MusicFooterTitle = styled.div`
-  width: 80%;
+  width: 78%;
   overflow-x: hidden;
   p {
     animation: moveTheText 5s infinite linear;
@@ -47,6 +55,9 @@ export const MusicFooterTitle = styled.div`
         transform: translateX(-100%);
       }
     }
+  }
+  @media only screen and (min-width: ${media.mobile}){
+    width: 80%;
   }
 `;
 
@@ -70,9 +81,12 @@ export const RecordFooter = styled.img`
 
 export const SideBar = styled.div`
 position: absolute;
-top: 50%;
+top: 46%;
 right: ${pxToRem(10)};
 color: white;
+@media only screen and (min-width: ${media.mobile}){
+    top: 50%;
+  }
 `
 export const SideBarOptions = styled.div`
 padding: ${pxToRem(5)};
